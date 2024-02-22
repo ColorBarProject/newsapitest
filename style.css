@@ -1,0 +1,149 @@
+.container {
+    padding-top: 0.5em;
+    min-width: 340px;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-menu-list button {
+    margin: 5px;
+    border: none;
+    background: none;
+    width: 120px;
+    /* padding: 8px 8px 8px 32px;     */
+    transition: 0.3s;
+    color: white;
+}
+.side-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border: none;
+    background: none;
+    color: white;
+}
+
+.side-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-menu-list button:hover {
+    background-color: #6c757d;
+        border-radius: 3px;
+}
+#input-area {
+    display: none;
+    
+}
+#search-input {
+    border-radius: 14px;
+    padding: 1px;
+    padding-left: 8px;
+}
+
+.title-logo {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.title-logo svg {
+    width: 430px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.title-logo svg:hover {    
+    cursor: pointer;
+    filter: invert(100%) ;    
+} 
+    
+
+.menus {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 4px double #000;
+}
+
+.menus button {
+    border: none;
+    background: none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 3px;
+     padding-bottom: 3px;
+     padding-left: 15px;
+     padding-right: 15px;
+
+    border-radius: 8px;
+
+}
+
+.menus button:hover {
+    background-color: #e9ecef;
+}
+
+.news-img-size {
+    max-width: 100%;
+    max-height: 250px; 
+    border-radius: 25px;   
+}
+
+.col-lg-4 {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+}
+
+.news {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    min-height: 13rem;
+}
+
+#side-nav-btn {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    #side-nav-btn {
+        display: inline-block;
+    }
+
+    .menus {
+        display: none;
+    }
+}
+
+.news-board {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#search-result {
+    font-size: 1em;
+    color: #111;
+}
