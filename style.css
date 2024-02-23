@@ -140,10 +140,16 @@
 .news-board {
     display: flex;
     justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
 }
 
 #search-result {
     font-size: 1em;
     color: #111;
+}
+
+.alert {
+margin: 1em;
+text-align: center;
 }
